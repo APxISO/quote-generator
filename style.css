@@ -19,6 +19,12 @@ body {
 
 }
 
+.main-container h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px #38a1f3;
+
+}
+
 .quote-container {
     width: auto;
     max-width: 900px;
@@ -75,7 +81,7 @@ button:active {
     box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
 }
 
-.twitter-button:hover {
+button:hover {
     color: #38a1f3;
 
 }
@@ -83,6 +89,21 @@ button:active {
 .fa-twitter {
     font-size: 1.5rem;    
 }
+
+/* Loader */
+.loader {
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #38a1f3; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
 
 
 
